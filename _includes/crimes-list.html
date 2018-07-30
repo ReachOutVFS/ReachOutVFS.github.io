@@ -1,0 +1,4 @@
+{% for crime in include.collection %}
+  <a href="{{ crime.url }}"><h2>{{ crime.name }}</h2></a>
+  <p>{{ crime.description }}</p>
+{% endfor %}
