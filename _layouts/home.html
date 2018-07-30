@@ -2,6 +2,6 @@
 layout: default
 ---
 
-<div class="home">
-  {{ content }}
-</div>
+{% for collection in site.collections %}
+    <a href="/{{ collection.language_code }}/">{{ collection.language_name }}</a>
+{% endfor %}
