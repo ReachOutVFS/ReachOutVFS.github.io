@@ -6,13 +6,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 
 collections:
-  crimes_en:
-    language_code: en
-    language_name: English
+  en:
+    localized_name: English
     output: true
-    permalink: /en/:name
-  crimes_hi:
-    language_code: hi
-    language_name: हिन्दी
+  hi:
+    localized_name: हिन्दी
     output: true
-    permalink: /hi/:name

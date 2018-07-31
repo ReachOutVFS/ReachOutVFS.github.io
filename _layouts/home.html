@@ -3,5 +3,5 @@ layout: default
 ---
 
 {% for collection in site.collections %}
-    <a href="/{{ collection.language_code }}/">{{ collection.language_name }}</a>
+    <a href="/{{ collection.label }}/">{{ collection.localized_name }}</a>
 {% endfor %}
