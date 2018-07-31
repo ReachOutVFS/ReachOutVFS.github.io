@@ -6,8 +6,8 @@ layout: default
   {% for collection in site.collections %}
     {% if collection.label != "posts" %}
       <li>
-        <h2><a href="/{{ collection.label }}/">{{ site.data[collection.label].name }}</a></h2>
-        <p>{{ site.data[collection.label].description }}</p>
+        <h2><a href="/{{ collection.label }}/">{{ site.data[collection.label].language }}</a></h2>
+        <p>{{ site.data[collection.label].site_description }}</p>
       </li>
     {% endif %}
   {% endfor %}

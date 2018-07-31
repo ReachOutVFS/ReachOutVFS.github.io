@@ -1,4 +1,5 @@
-name: English
-description: >
+language: English
+site_title: ReachOutVFS
+site_description: >
   This is a localized description of ReachOutVFS in English.
   It needs to be filled-in by a volunteer.
