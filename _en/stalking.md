@@ -1,5 +1,6 @@
 ---
 name: Stalking
+category: Example Category 1
 ---
 
 ## What is Stalking?
