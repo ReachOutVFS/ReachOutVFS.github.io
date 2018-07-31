@@ -2,6 +2,12 @@
 layout: default
 ---
 
-{% for collection in site.collections %}
-    <a href="/{{ collection.label }}/">{{ collection.localized_name }}</a>
-{% endfor %}
+<ul>
+  {% for collection in site.collections %}
+    {% if collection.label != "posts" %}
+      <li>
+        <a href="/{{ collection.label }}/">{{ collection.localized_name }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
