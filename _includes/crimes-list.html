@@ -1,13 +1,15 @@
 {% assign crime_categories = include.collection | group_by: "category" %}
 
 {% for category in crime_categories %}
-  <h2>{{ category.name }}</h2>
-  <ul>
-    {% for crime in category.items %}
-      <li>
-        <a href="{{ crime.url }}"><h3>{{ crime.name }}</h3></a>
-        <p>{{ crime.description }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+  {% if category.name != "" %}
+    <h2>{{ category.name }}</h2>
+    <ul>
+      {% for crime in category.items %}
+        <li>
+          <a href="{{ crime.url }}"><h3>{{ crime.name }}</h3></a>
+          <p>{{ crime.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
