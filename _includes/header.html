@@ -1,2 +1,4 @@
 <header class="site-header" role="banner">
+  {% assign collection = site.collections | where:"label", page.collection | first %}
+  <h1>{{ collection.localized_site_name }}</h1>
 </header>
