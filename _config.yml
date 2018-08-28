@@ -8,7 +8,9 @@ markdown: kramdown
 collections:
   en:
     localized_name: English
+    localized_site_name: ReachOutVFS
     output: true
   hi:
     localized_name: हिन्दी
+    localized_site_name: रीचआऊट वीऐफऐस
     output: true
